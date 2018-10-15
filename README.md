@@ -40,3 +40,6 @@ See: https://mran.microsoft.com/.
 >
 
 ```
+
+### References
+* [Rocker](https://github.com/rocker-org)
