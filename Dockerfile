@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEL maintainer="support@globalmaksium.com"
+LABEL maintainer="support@globalmaksimum.com"
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
