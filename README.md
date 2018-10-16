@@ -3,6 +3,12 @@
 
 We try to keep image as compact as possible. Compared to [r-ver](https://github.com/rocker-org/rocker-versioned), since MRO includes [Intel MKL](https://software.intel.com/en-us/mkl) image size is 200 MB more :/
 
+
+###  Images
+* `globalmaksimum/mran:latest`: Base image without any extra packages. Other images use this as the base image.
+* `globalmaksimum/mran-datascience:latest`: Base image with popular data science packages
+
+
 ### Quickstart
 
 ```
