@@ -7,9 +7,18 @@ LABEL maintainer="support@globalmaksimum.com"
 # ARG REPRODUCABLE_RESEARCH true
 # ARG MACHINE_LEARNING true
 
+ARG TERM=xterm
+ENV TERM=$(TERM)
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=$(DEBIAN_FRONTEND)
+
 RUN apt-get update && apt-get install -y \
-build-essential && \
+build-essential tzdata && \
+apt-get clean && \
 rm -rf /var/lib/apt/lists/*
+
+RUN Rscript -e 'install.packages(c("readr","ramify"))'
 
 # Data Manipulation
 RUN Rscript -e 'install.packages("dplyr")'
